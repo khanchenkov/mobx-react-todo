@@ -2,7 +2,9 @@ import { observer } from 'mobx-react'
 import { useEffect } from 'react'
 import ThemeButton from './ThemeButton'
 import Logo from '../logo.svg'
-import {useStore} from "../stores"
+import { useStore } from '../stores'
+import TaskInput from './TaskInput'
+import TaskList from './TaskList'
 
 const App = () => {
   const store = useStore()
@@ -20,8 +22,8 @@ const App = () => {
         </div>
         <ThemeButton />
       </div>
-      {/* <TaskInput></TaskInput>
-      <TaskList></TaskList> */}
+      <TaskInput />
+      <TaskList />
     </div>
   )
 }

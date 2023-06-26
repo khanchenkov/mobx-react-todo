@@ -32,7 +32,7 @@ export class Theme {
     }
 
     @computed
-    mode(light: any, dark: any) {
+    mode(light: string, dark: string) {
         switch (this._themeMode) {
             case 'dark':
                 return dark

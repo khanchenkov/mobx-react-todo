@@ -2,7 +2,7 @@ interface Props extends React.HTMLAttributes<HTMLDivElement>, React.DOMAttribute
   innerref?: any
 }
 
-const BaseText = (props: Props) => {
+const TextWrapper = (props: Props) => {
   return (
     <div ref={props.innerref} {...props} className={`text-dark dark:text-light text-base ${props.className}`}>
       {props.children}
@@ -10,4 +10,4 @@ const BaseText = (props: Props) => {
   )
 }
 
-export default BaseText
+export default TextWrapper
